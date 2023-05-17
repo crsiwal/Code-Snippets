@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+$primary:#FCA737;
+$primary-light:#FFDFB8;
+$background-color:#EDEEEF;
+
+// Mixin
+@mixin phone {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet {
+  @media (min-width: 600px) { @content; }
+}
+@mixin laptop {
+  @media (min-width: 900px) { @content; }
+}
+@mixin desktop {
+  @media (min-width: 1200px) { @content; }
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	background:$background-color;
+	height:100vh;
+	position: relative;
+}
+
+.body{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.primary-color{
+	color:$primary;
+}
+
+.testimonial-view{
+	max-width:900px;
+	padding:50px 15px;
+	margin:0 auto 70px auto;
+	border-radius: 3px;
+	&.top-margin{
+		.testimonial-block_user{
+			@include laptop{
+				margin-top:-100px;
+			}
+			margin-top:-60px;
+		}
+	}
+	img.left-quote{
+		opacity:0.01;
+		width:20%;
+		transform:rotate(180deg);
+		position:absolute;
+		left:40%;
+	}
+
+	@include laptop{
+		.carousel-control-prev{
+			left:-50px;
+		}
+		.carousel-control-next{
+			right:-50px;
+		}
+		.carousel-control-next-icon, .carousel-control-prev-icon{
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+
+.section-header, .testimonial-block_user_info_name{
+	font-weight:bold;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	&:after{
+		content:"";
+		height:4px;
+		width:100px;
+		background-color:$primary;
+		position: absolute;
+		bottom:0;
+		left:calc(50% - 50px);
+	}
+}
+
+.testimonial-block{
+	padding:15px;
+	margin:50px 15px;
+	background:#fff;
+	color:#333;
+	box-shadow: 0 5px 30px -5px rgba(0,0,0,0.15);
+	@include laptop{
+		padding:50px;
+		margin:50px;		
+	}
+	.row{
+		display: flex;
+		place-items:center;
+	}
+	.testimonial-block_user{
+		margin-bottom: 30px;
+		text-align: center;
+		.testimonial-block_user_image{
+			position: relative;
+			margin:0 15px 30px 15px;
+			img{
+				height:170px;
+				width:170px;
+				border:7px solid $primary-light;
+				border-radius: 170px;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+			}
+		}
+		.testimonial-block_user_info{
+			.testimonial-block_user_info_name{
+				margin-bottom: 10px;
+				&:after{
+					width:50px;
+					left:calc(50% - 25px);
+				}
+			}
+		}
+	}
+	.testimonial-block_content{
+		text-align: center;
+		font-size:18px;
+	}
+}
+
+.top-margin{
+	.testimonial-block{
+		.row{
+			place-items:normal;
+		}
+	}
+}

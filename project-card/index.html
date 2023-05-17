@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Card UI Design</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="main-content">
+		<div class="container">
+			<h1 class="text-center text-uppercase">Project Card</h1>
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="col-sm-4 offset-sm-4">
+					<div class="card mb-3">
+						<div class="card-body p-4">
+							<span class="text-uppercase badge badge-success">React Project</span>
+							<h4 class="text-truncate text-truncate--2"><a href="#!" class="text-dark">Project Frontend - The best place to find your need</a></h4>
+							<div class="my-4 py-2">
+								<h5>Ongoing work</h5>
+								<a href="#!" class="d-block text-dark mb-1"><span class="mr-2 indicator indicator--green"></span>Design UI for master page</a>
+								<a href="#!" class="d-block text-dark mb-1"><span class="mr-2 indicator indicator--green"></span>Develop Api for users list</a>
+								<a href="#!" class="d-block text-dark mb-1"><span class="mr-2 indicator indicator--orange"></span>Fixing bug #14</a>
+								<a href="#!" class="text-muted">+15 more</a>
+							</div>
+							<h5>Team</h5>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center team-imgs">
+									<img src="img/user1.jpg" alt="User" data-toggle="tooltip" data-placement="top" title="User name">
+									<img src="img/user2.jpg" alt="User" data-toggle="tooltip" data-placement="top" title="User name">
+									<img src="img/user3.jpg" alt="User" data-toggle="tooltip" data-placement="top" title="User name">
+									<span class="d-flex justify-content-center align-items-center team-circle">+5</span>
+								</div>
+								<a href="#!" class="btn btn-primary">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+</body>
+</html>

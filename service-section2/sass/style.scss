@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+$primary: #03a9f4;
+$success: #4caf50;
+$danger: #f44336;
+$warning: #ff9800;
+$dark: #333;
+
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.icon-box{
+	height:75px;
+	width:75px;
+	border-radius:10px;
+	margin:15px auto 35px auto;
+	background:lighten($dark,45);
+	color:$dark;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform:rotate(45deg);
+	i{
+		transform:rotate(-45deg);
+	}
+	&.icon-box--success{
+		background:lighten($success,45);
+		color:$success;
+	}
+	&.icon-box--primary{
+		background:lighten($primary,45);
+		color:$primary;
+	}
+	&.icon-box--warning{
+		background:lighten($warning,45);
+		color:$warning;
+	}
+}

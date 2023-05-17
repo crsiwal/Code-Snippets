@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);body {
+  font-family: "Roboto", sans-serif;
+  background: #f9f9f9;
+}
+
+.primary-color {
+  color: #FF9232;
+}
+
+.primary-bg {
+  background-color: #FF9232 !important;
+}
+
+.section-50 {
+  padding: 50px 0;
+}
+
+.section-100 {
+  padding: 100px 0;
+}
+
+.btn {
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+
+.btn.btn-lg {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn i {
+  padding-left: 20px;
+}
+
+.btn-primary {
+  background-color: #FF9232;
+  border-color: #FF9232;
+}
+
+.btn-primary:hover {
+  background-color: #ff8419;
+  border-color: #ff8419;
+}
+
+.pricing-box {
+  padding: 25px 15px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.16);
+}
+
+.pricing-box .pricing-head {
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 15px;
+  margin: -25px -15px 25px -15px;
+}
+
+.pricing-box.pricing-box--crown .pricing-head {
+  background: #FF9232;
+}
+
+.pricing-box.pricing-box--ace .pricing-head {
+  background: #9B2179;
+}
+
+.pricing-box.pricing-box--conquer .pricing-head {
+  background: #591869;
+}
+
+.pricing-box .pricing-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.pricing-box .pricing-list .pricing-list-item {
+  padding: 10px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.pricing-box .pricing-list .pricing-list-item.avail i {
+  color: #8bc34a;
+}
+
+.pricing-box .pricing-list .pricing-list-item.not-avail {
+  color: #bbb;
+}
+
+.pricing-box .pricing-list .pricing-list-item.not-avail i {
+  color: #ff5722;
+}
+
+.pricing-box .btn {
+  color: #fff;
+}
+
+.pricing-box.pricing-box--crown .btn {
+  background-color: #FF9232;
+  border-color: #FF9232;
+}
+
+.pricing-box.pricing-box--ace .btn {
+  background-color: #9B2179;
+  border-color: #9B2179;
+}
+
+.pricing-box.pricing-box--conquer .btn {
+  background-color: #591869;
+  border-color: #591869;
+}
+

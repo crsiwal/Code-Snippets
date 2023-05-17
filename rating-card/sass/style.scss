@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+$orange: #ffc107;
+
+body {
+	background: #f9f9f9;
+	font-family: "roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.m-b-30 {
+	margin-bottom: 30px;
+}
+
+.rating-card {
+	background-color: #fff;
+	padding: 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rating-number {
+	font-size: 50px;
+	font-weight: 600;
+
+	small {
+		font-size: 16px;
+	}
+}
+
+.rating-stars {
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #eee;
+	}
+
+	.filled-star {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: $orange;
+	}
+
+	img {
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+
+.rating-progress {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.rating-grade {
+		padding: 3px 20px 3px 0;
+		float: left;
+		width: 50px;
+		text-align: right;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		img {
+			height: 15px;
+			margin-left: 3px;
+		}
+	}
+
+	.progress {
+		float: left;
+		width: calc(100% - 110px);
+		border-radius: 10px;
+
+		.bg-warning {
+			background-color: $orange !important;
+			border-radius: 10px;
+		}
+	}
+
+	.rating-value {
+		padding: 3px 0 3px 20px;
+		float: left;
+		width: 60px;
+	}
+
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}

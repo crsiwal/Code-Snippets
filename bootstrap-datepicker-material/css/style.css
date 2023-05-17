@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);body {
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  background: #fff;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-height: 700px;
+  -webkit-box-shadow: 0 2px 90px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 90px rgba(0, 0, 0, 0.05);
+}
+
+.datepicker-dropdown:after {
+  border-bottom-color: #757AFF;
+}
+
+.datepicker {
+  padding: 0;
+  -webkit-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 3px 30px rgba(0, 0, 0, 0.06);
+  border: 0;
+}
+
+.datepicker .prev,
+.datepicker .next,
+.datepicker .datepicker-switch {
+  background: #757AFF;
+  color: #fff;
+  border-radius: 0;
+  padding: 20px;
+}
+
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker .datepicker-switch:hover {
+  background: #6b70ff;
+  color: #fff;
+}
+
+.datepicker .dow,
+.datepicker .day {
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+}
+
+.datepicker .month {
+  border-radius: 50px;
+}
+
+.datepicker .today.day {
+  background: #757AFF33;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.datepicker .today.day:hover {
+  background: #757AFF33;
+}
+
+.datepicker .active.day {
+  background: #757AFF !important;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.datepicker .active.day:hover {
+  background: #6b70ff !important;
+}
+

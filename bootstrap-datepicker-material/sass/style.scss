@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+$primary:#757AFF;
+body{
+	font-family:"Roboto", sans-serif;
+}
+.body{
+	background:#fff;
+	padding:40px;
+	margin:0 auto;
+	max-width: 1300px;
+	min-height:700px;
+	box-shadow: 0 2px 90px rgba(0,0,0,0.05);
+}
+
+.datepicker-dropdown:after{
+	border-bottom-color:$primary;
+}
+.datepicker{
+	padding:0;
+	box-shadow: 0 3px 30px rgba(0,0,0,0.06);
+	border:0;
+	.prev,.next,.datepicker-switch{
+		background:$primary;
+		color:#fff;
+		border-radius: 0;
+		padding:20px;
+		&:hover{
+			background:darken($primary,2%);
+			color:#fff;
+		}
+	}
+	.dow,.day{
+		height:45px;
+		width:45px;
+		border-radius:45px;
+	}
+	.month{
+		border-radius:50px;
+	}
+	.today.day{
+		background:#757AFF33;
+		box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+		&:hover{
+			background:#757AFF33;
+		}
+	}
+	.active.day{
+		background:$primary!important;
+		box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+		&:hover{
+			background:darken($primary,2%)!important;
+		}
+	}
+}

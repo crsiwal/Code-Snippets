@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+$primary: #ff9800;
+
+body {
+	background: lighten($primary, 49);
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.flex-center {
+	align-items: center;
+}
+
+#accordion {
+	.accordion-card {
+		background: transparent;
+		border: 0;
+		margin-bottom: 30px;
+		&__header {
+			background: transparent;
+			cursor: pointer;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&.collapsed{
+				.drop-icon{
+					transform: rotate(0deg);
+				}
+			}
+			h5 {
+				display: flex;
+				align-items: center;
+				span {
+					margin-left: 10px;
+				}
+			}
+			.drop-icon{
+				margin-right:15px;
+				transform: rotate(180deg);
+				transition: all 0.2s;
+			}
+		}
+		&__body {
+			// border-top: 1px solid #ddd;
+			margin-top: 15px;
+			padding: 25px;
+			background: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
+.circle-icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $primary;
+	border: 5px solid lighten($primary, 40);
+	color: #fff;
+	margin-left: -20px;
+	margin-right:10px;
+    transform: scale(1.2);
+}

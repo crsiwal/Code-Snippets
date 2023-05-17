@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wizard With Left Menu</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="main-content">
+		<div class="container">
+			<h1 class="text-center text-uppercase">Wizard with left tabs</h1>
+			<br>
+			<br>
+			<div class="wizard">
+				<div class="wizard-menu" style="background-image: linear-gradient(to right, #343D7Daa, #343D7Daa),url('images/users/user1.jpg');">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+								Login Information
+								<span>1</span>
+							</a>
+						</li>
+						<li role="presentation" class="disabled">
+							<a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+								Personal Information
+								<span>2</span>
+							</a>
+						</li>
+						<li role="presentation" class="disabled">
+							<a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+								Job Information
+								<span>3</span>
+							</a>
+						</li>
+						<li role="presentation" class="disabled">
+							<a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+								Successfully Completed
+								<span>4</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane active" role="tabpanel" id="step1">
+						<h3>Login Information</h3>
+						<p>This is step 1. <br> Fill your content here with form elements.</p>
+						<div class="bottom-action">
+							<ul class="list-inline pull-right">
+								<li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-pane" role="tabpanel" id="step2">
+						<h3>Step 2</h3>
+						<p>This is step 2</p>
+						<div class="bottom-action">
+							<ul class="list-inline pull-right">
+								<li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+								<li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-pane" role="tabpanel" id="step3">
+						<h3>Step 3</h3>
+						<p>This is step 3</p>
+						<div class="bottom-action">
+							<ul class="list-inline pull-right">
+								<li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+								<li><button type="button" class="btn btn-default next-step">Skip</button></li>
+								<li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-pane" role="tabpanel" id="complete">
+						<h3>Complete</h3>
+						<p>You have successfully completed all steps.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

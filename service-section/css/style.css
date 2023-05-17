@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.service-row {
+	align-items: center;
+}
+
+.section-img {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.section-img .main-img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 5px;
+	z-index: 1;
+	position: relative;
+}
+.section-img .path-img {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	top: -50px;
+	left: -50px;
+	opacity: 0.5;
+	z-index: 0;
+}
+.section-img .path-img2 {
+	position: absolute;
+	bottom: -25px;
+	right: -25px;
+	opacity: 0.5;
+	z-index: 0;
+}
+.section-img .path-img3 {
+	position: absolute;
+	height: 350px;
+	width: 350px;
+	top: -50px;
+	opacity: 0.1;
+	z-index: 0;
+}
+
+.section-content .section-bit {
+	color: #03a9f4;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.section-content .section-title {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+	color: #012f44;
+}
+
+.section-content .section-desc {
+	color: #777;
+	margin-bottom: 25px;
+}
+
+.section-content .section-services {
+	font-size: 20px;
+	background: #fff;
+	padding: 15px 30px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section-content .section-services_col {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.section-content .section-services_col i {
+	color: #03a9f4;
+	width: 20px;
+	text-align: center;
+	margin-right: 7px;
+	transform: scale(1.2);
+}

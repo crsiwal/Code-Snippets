@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+// Variables
+$primary: #007bff;
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: #f9f9f9;
+}
+
+.primary-color {
+	color: $primary;
+}
+
+.section-100 {
+	padding: 100px 0;
+}
+
+.blog-card {
+	background: #fff;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	box-shadow: 0 12px 17px rgba(129, 140, 151, 0.1);
+	.blog-thumbnail {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+	.blog-container {
+		padding: 30px;
+		position: relative;
+		padding-bottom: 70px;
+		a:hover {
+			text-decoration: none;
+			color: darken($primary, 10);
+		}
+		.dark-link {
+			color: #333;
+		}
+		.blog-desc {
+			color: #8b949d;
+		}
+		.blog-author {
+			height: 30px;
+			width: 30px;
+			border-radius: 30px;
+			margin-right: 5px;
+		}
+		.blog-footer {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 15px 30px;
+			border-top: 1px solid #ddd;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+}

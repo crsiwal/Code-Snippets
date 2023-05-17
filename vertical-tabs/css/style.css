@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.shadow {
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.circle-icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border: 2px solid #8b50ff;
+	background: #fff;
+	color: #8b50ff;
+	font-size: 22px;
+}
+
+.vertical-tab {
+	z-index: 1;
+}
+.vertical-tab li.nav-item a {
+	padding: 20px;
+	width: 300px;
+	height: 100%;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: #fff;
+	color: #333;
+	transition: all 0.3s;
+}
+.vertical-tab li.nav-item a.active {
+	background: linear-gradient(120deg, #f64cc2, #8b50ff);
+	color: #fff;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.vertical-tab li.nav-item a.active .circle-icon {
+	border-color: #fff;
+}
+
+.tab-content {
+	flex: 2;
+	background: #fff;
+}
+.tab-content .tab-pane {
+	overflow: hidden;
+	position: relative;
+}
+.tab-content .wid-250 {
+	width: 250px;
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.circle-icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border: 2px solid #8b50ff;
+	background: #fff;
+	color: #8b50ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.vertical-tab {
+	z-index: 1;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.vertical-tab li.nav-item a {
+	width: 200px;
+	height: 100%;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	color: #333;
+	transition: all 0.3s;
+}
+.vertical-tab li.nav-item a.active {
+	background: linear-gradient(120deg, #f64cc2, #8b50ff);
+	border-radius: 10px;
+	color: #fff;
+	transform: scale(1.05);
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.vertical-tab li.nav-item a.active .circle-icon {
+	border-color: #fff;
+}
+
+.tab-content {
+	flex: 2;
+	background: #fff;
+	height: 400px;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.tab-content .tab-pane {
+	width: calc(100% + 25px);
+	height: 450px;
+	transform: translate(-25px, -25px);
+	overflow: hidden;
+	position: relative;
+}
+.tab-content .tab-pane img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.tab-content .tab-pane .text-overlay {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 100px);
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(
+		120deg,
+		rgba(246, 76, 194, 0.8),
+		rgba(139, 80, 255, 0.8)
+	);
+	color: #fff;
+	text-align: center;
+}

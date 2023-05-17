@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+$primary:#3BC3FF;
+$light-grey:#888888;
+$depth-low:0 2px 10px rgba(0,0,0,0.1);
+$depth-medium:0 2px 25px -3px rgba(0,0,0,0.1);
+
+body{
+	background:#f5f5f5;
+}
+
+@media only screen and (max-width: 767px){
+	.hide-on-mobile{
+		display: none;
+	}
+}
+
+.login-box{
+	background:url('../images/login-form-bg.png');
+	background-size:cover;
+	background-position: center;
+	padding:50px;
+	margin:50px auto;
+	min-height:700px;
+	box-shadow:0 2px 60px -5px rgba(0,0,0,0.1);
+}
+
+.logo{
+	font-family:"Script MT";
+	font-size:54px;
+	text-align: center;
+	color:$light-grey;
+	margin-bottom: 50px;
+	.logo-font{
+		color:$primary;
+	}
+}
+@media only screen and (max-width:767px){
+	.logo{
+		font-size:34px;
+	}
+}
+
+.header-title{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.login-form{
+	max-width:300px;
+	margin:0 auto;
+	.form-control{
+		border-radius:0;
+		margin-bottom: 30px;
+	}
+	.form-group{
+		position: relative;
+		.forgot-password{
+			position: absolute;
+			top:6px;
+			right:15px;
+		}
+	}
+	.btn{
+		border-radius:0;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		margin-bottom: 30px;
+		&.btn-primary{
+			background:$primary;
+			border-color:darken($primary,2%);
+		}
+	}
+}
+
+.slider-feature-card{
+	background:#fff;
+	max-width:280px;
+	margin:0 auto;
+	padding:30px;
+	text-align: center;
+	box-shadow: $depth-medium;
+	img{
+		height:80px;
+		margin-top:30px;
+		margin-bottom: 30px;
+	}
+	h3,p{
+		margin-bottom: 30px;
+	}
+}
+
+.carousel-indicators{
+	bottom:-50px;
+}
+.carousel-indicators li{
+	cursor:pointer;
+}

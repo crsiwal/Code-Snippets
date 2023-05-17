@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+@mixin for-phone-only {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+@mixin for-tablet {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+@mixin for-desktop {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+body {
+	background: #4378A0;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.box {
+	padding: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+	@include for-tablet {
+		padding: 50px;
+	}
+}
+
+.align-center {
+	align-items: center;
+}
+
+.video-block {
+	position: relative;
+	.video-image {
+		position: relative;
+		margin-top: 30px;
+		@include for-tablet {
+			width: 75%;
+			margin: 0 auto;
+		}
+		.img-overlay {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: linear-gradient(45deg, #009cd5, #0069b9);
+			opacity: 0.9;
+			border-radius: 10px;
+		}
+		img {
+			height: 400px;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+			box-shadow: 0 5px 30px -3px rgba(0, 0, 0, 0.1);
+		}
+		.play-btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 60px;
+			width: 60px;
+			border-radius: 100px;
+			background: #fff;
+			color: #2196f3;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&:before,
+			&:after {
+				content: "";
+				color: transparent;
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: -1;
+				bottom: 0;
+				left: 0;
+				transition: 0.5s;
+				border-radius: 50%;
+				border: 1px solid;
+				background: rgba(255, 255, 255, 0.253);
+			}
+			&:before {
+				animation: ring-wave 2s linear infinite;
+			}
+			&:after {
+				animation: ring-wave 2s linear 1s infinite;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+			i {
+				font-size: 22px;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+@keyframes ring-wave {
+	0% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(1.75);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}

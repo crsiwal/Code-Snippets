@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FAQ UI Design</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="main-content">
+		<div class="container">
+			<h4 class="text-center text-uppercase text-primary">Accordion</h4>
+			<h1 class="text-center mb-5">Frequently Asked Questions</h1>
+			<br>
+			<br>
+			
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="img/faq.svg" alt="FAQ" class="img-fluid">
+				</div>
+				<div class="col-sm-6">
+					<div id="accordion">
+						<div class="accordion-card">
+							<div class="accordion-card__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<h5 class="mb-0">
+									<span>What do I get?</span>
+								</h5>
+								<i class="fa fa-caret-down drop-icon"></i>
+							</div>					  
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="accordion-card__body">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi praesentium ipsam itaque nemo harum aut obcaecati. Distinctio explicabo veniam debitis quam repudiandae nesciunt possimus quis asperiores voluptatum nulla voluptate labore, facere expedita dolorem libero, ipsam nobis adipisci reprehenderit? Vel assumenda tempore ad quaerat unde, fugit eos voluptate, atque voluptatem neque ullam.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-card">
+							<div class="accordion-card__header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<h5 class="mb-0">
+									<span>Where do I get?</span>
+								</h5>
+								<i class="fa fa-caret-down drop-icon"></i>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="accordion-card__body">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi praesentium ipsam itaque nemo harum aut obcaecati. Distinctio explicabo veniam debitis quam repudiandae nesciunt possimus quis asperiores voluptatum nulla voluptate labore, facere expedita dolorem libero, ipsam nobis adipisci reprehenderit? Vel assumenda tempore ad quaerat unde, fugit eos voluptate, atque voluptatem neque ullam.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-card">
+							<div class="accordion-card__header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<h5 class="mb-0">
+									<span>How do I get?</span>
+								</h5>
+								<i class="fa fa-caret-down drop-icon"></i>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="accordion-card__body">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi praesentium ipsam itaque nemo harum aut obcaecati. Distinctio explicabo veniam debitis quam repudiandae nesciunt possimus quis asperiores voluptatum nulla voluptate labore, facere expedita dolorem libero, ipsam nobis adipisci reprehenderit? Vel assumenda tempore ad quaerat unde, fugit eos voluptate, atque voluptatem neque ullam.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
